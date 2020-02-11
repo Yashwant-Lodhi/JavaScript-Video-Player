@@ -1,0 +1,90 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	height: 100vh;
+	background-color: #333;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 20px 50px;
+	color: orange;
+	letter-spacing: 2px;
+}
+.video-player {
+	display: flex;
+	position: relative;
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.video-player video {
+	width: 100%;
+}
+.controls {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, .7);
+	flex-wrap: wrap;
+	transform: translateY(95%);
+	transition: all .5s ease-in-out;
+}
+.video-player:hover .controls {
+	transform: translateY(0);
+}
+.buttons {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+.buttons button {
+	background: none;
+	border: 0;
+	outline: 0;
+	color: #fff;
+	font-size: 25px;
+	padding: 5px 15px;
+	cursor: pointer;
+}
+.bar {
+	height: 10px;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.blue-bar {
+	height: 5px;
+	background-color: red;
+	width: 0;
+	transition: width .3s linear;
+}
+.vol-up,
+.vol-mute,
+.vol-down,
+.forward i,
+.backward i {
+	font-size: 20px !important;
+}
+.volume-panel {
+	border: 1px groove #fff;
+	border-radius: 20px;
+}
+@media (max-width: 580px) {
+	.volume-panel {
+		display: none;
+	}
+}

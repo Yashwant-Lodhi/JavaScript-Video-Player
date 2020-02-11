@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Custom JS Video Player</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1>Custom JS Video Player</h1>
+
+        <div class="video-player">
+            <video class="video" id="video" src="video_source_file.mp4"></video>
+            <div class="controls">
+                <div class="bar">
+                    <div class="blue-bar">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div>
+                        <button class="play-pause" id="play-pause"><i id="btn-icon"
+                                class="fas fa-play-circle"></i></button>
+                        <button class="backward"><i class="fas fa-undo"></i></button>
+                        <span style="color: #fff">- 10s +</span>
+                        <button class="forward"><i class="fas fa-redo"></i></button>
+                    </div>
+                    <div class="volume-panel">
+                        <button class="vol-down"><i class="fas fa-volume-down"> - </i></button>
+                        <button class="vol-mute"><i class="fas fa-volume-mute"></i></button>
+                        <button class="vol-up"><i class="fas fa-volume-up"></i> + </button>
+                    </div>
+                    <div class="time-stamps" style="color: #fff"><span class="current-time">00 : 00</span> / <span
+                            class="time-duration"></span></div>
+
+
+                    <button class="fullScr"><i class="fas fa-compress"></i></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/da80c47ff8.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
